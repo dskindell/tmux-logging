@@ -2,19 +2,19 @@ SUPPORTED_VERSION="1.9"
 
 # Key binding options and defaults
 
-default_logging_key="P" # Shift-p
+default_logging_key="g" # g
 logging_key=$(tmux show-option -gqv "@logging_key")
 logging_key=${logging_key:-$default_logging_key}
 
-default_pane_screen_capture_key="M-p" # Alt-p
+default_pane_screen_capture_key="G" # Shift-g
 pane_screen_capture_key=$(tmux show-option -gqv "@screen-capture-key")
 pane_screen_capture_key=${pane_screen_capture_key:-$default_pane_screen_capture_key}
 
-default_save_complete_history_key="M-P" # Alt-Shift-p
+default_save_complete_history_key="^" # Ctrl-Shift-h
 save_complete_history_key=$(tmux show-option -gqv "@save-complete-history-key")
 save_complete_history_key=${save_complete_history_key:-$default_save_complete_history_key}
 
-default_clear_history_key="M-c" # Alt-c
+default_clear_history_key="C" # Shift-c
 clear_history_key=$(tmux show-option -gqv "@clear-history-key")
 clear_history_key=${clear_history_key:-$default_clear_history_key}
 

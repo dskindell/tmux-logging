@@ -11,7 +11,7 @@ Features:
 3. Save a complete history of current pane<br/>
    Everything that has been typed and all the output since the creation of the
    current pane can be saved to a file.
-4. Clear pane history with `prefix + alt + c`
+4. Clear pane history with `prefix + shift + c`
 
 Tested and working on Linux, OSX and Cygwin.
 
@@ -19,7 +19,7 @@ Tested and working on Linux, OSX and Cygwin.
 
 Toggle (start/stop) logging in the current pane.
 
-* Key binding: `prefix + shift + p`
+* Key binding: `prefix + g`
 * File name format: `tmux-#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log`
 * File path: `$HOME` (user home dir)
   * Example file: `~/tmux-my-session-0-1-20140527T165614.log`
@@ -28,7 +28,7 @@ Toggle (start/stop) logging in the current pane.
 
 Save visible text, in the current pane. Equivalent of a "textual screenshot".
 
-* Key binding: `prefix + alt + p`
+* Key binding: `prefix + shift + g`
 * File name format: `tmux-screen-capture-#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log`
 * File path: `$HOME` (user home dir)
   * Example file: `tmux-screen-capture-my-session-0-1-20140527T165614.log`
@@ -38,7 +38,7 @@ Save visible text, in the current pane. Equivalent of a "textual screenshot".
 Save complete pane history to a file. Convenient if you retroactively remember
 you need to log/save all the work.
 
-* Key binding: `prefix + alt + shift + p`
+* Key binding: `prefix + ^`
 * File name format: `tmux-history-#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log`
 * File path: `$HOME` (user home dir)
   * Example file: `tmux-history-my-session-0-1-20140527T165614.log`
@@ -52,7 +52,7 @@ it is ok to set this option to a high number.
 
 ### 4. Clear pane history
 
-Key binding: `prefix + alt + c`
+Key binding: `prefix + shift + c`
 
 This is just a convenience key binding.
 
